@@ -23,7 +23,7 @@ div, header, section, footer{
     font-style: normal;
 } /*원스토어 모바일고딕 제목체*/
 
-html, body { font-family: 'ONE-Mobile-Regular';}
+html, body { font-family: 'ONE-Mobile-Regular'; overflow-x: hidden;}
 
 /* pc버전 */
 .wrap{width: 100%;}
