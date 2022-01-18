@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    <title>NULDAN</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/picon.png"  rel="image/icon">
+    <!-- 부트스트랩 css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- awsome icon cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 외부 css -->
+    <link rel="stylesheet" href="css/nuldan.css" type="text/css">
+    <link rel="stylesheet" href="css/media_main.css" type="text/css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 부트그트랩 js css -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- swiper js cdn -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 js -->
+    <script src="js/nuldan.js"></script>
+    <!-- 구글지도 api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script>
+    <script> 
+        function initialize() { 
+      var myLatlng = new google.maps.LatLng(37.28086258165246, 126.84865294548177); // 좌표값
+        var mapOptions = { 
+              zoom: 14, // 지도 확대레벨 조정
+              center: myLatlng, 
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+        } 
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+        var marker = new google.maps.Marker({ 
+      position: myLatlng, 
+      map: map, 
+      title: "조인앤조인" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+      }); 
+        } 
+      window.onload = initialize;
+      </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">브랜드소개</a>
+                            <ul class="sub">
+                                <li><a href="#">널담은 가치</a></li>
+                                <li><a href="#">널담은 공간</a></li>
+                                <li><a href="#">찾아오는 공간</a></li>
+                                <li><a href="#">널담레터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">구매하기</a>
+                            <ul class="sub">
+                                <li><a href="#">널담 디저트</a></li>
+                                <li><a href="#">널담 로우</a></li>
+                                <li><a href="#">널담 문구</a></li>
+                                <li><a href="#">더베러모닝</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">상품후기</a></li>
+                                <li><a href="#">회원혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">널담의 이야기</a>
+                            <ul class="sub">
+                                <li><a href="#">활용 레시피</a></li>
+                                <li><a href="#">다양한 스토리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <a href="#"></a>
+                </div>
+                <!-- 서브메뉴배경 -->
+                <div class="sub_bg"></div>
+            </div>
+        </header>
+        <section class="s1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main1">
+                        <div class="main_txt">
+                                <h1>‘브라우니는 언제나 진리!’<br>더베러모닝 비건 브라우니 출시</h1>
+                                <h4>#꾸덕찐뜩 #달콤쌉쌀 #오독오독</h4>
+                        </div>
+                    </div>
+                  <div class="swiper-slide main2">
+                    <div class="main_txt">
+                        <h4>Renewal</h4>  
+                        <h1>더 맛있어진<br>널담 <span>비건 초코파이</span></h1>
+                    </div>    
+                        <p>칼로리 DOWN 식이섬유 UP</p>
+                  </div>
+                  <div class="swiper-slide main3">
+                    <div class="main_txt">
+                        <h1>‘더 나은 아침을 위한’<br>더베러모닝 비건 마들렌 5종 출시</h1>
+                        <h4>5FLAVOR_얼그레이 플레인 레몬 초코 흑임자</h4>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main4">
+                    <div class="main_txt">
+                        <h4>무색소, 저칼로리 아이스크림</h4>
+                        <h1>모두를 위한 맛있는<br><span>비건 아이스크림 널담 비넛츠</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="s2">
+            <div class="center">
+                <div class="txt_center fade_animation">
+                    <h1>WHAT'S THE BETTER</h1>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 company_txt">
+                        <h1>모든것을 better하게</h1>
+                        <p>널담은 '더 나은 성분'을 고민하고 '더 나은 식품'을 제안드려요
+                            널담만의 영양학적으로 균형잡힌 디저트를 만나보세요
+                            우리 모두 잘먹고 잘 사게 되는 그날까지! 널담의
+                            고민은 계속됩니다:D</p>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 company_img">
+                        <img src="img/s1.jpg" alt="company">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="s3">
+             <div class="center">
+                <div class="txt_center fade_animation">
+                    <h1>BAST MENU</h1>
+                </div>
+                <div class="product up_animation">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide p1">
+                             <div class="p_top">
+                                <h3>널담 뚱뚱한 마카롱</h3>
+                                <i class="fas fa-plus"></i>
+                             </div>
+                             <div class="p_bottom">
+                                <h3>비건(Vegan)<br>7,600원</h3>
+                             </div>
+                          </div>
+                            <div class="swiper-slide p2">
+                                <div class="p_top">
+                                   <h3>	널담 비건 견과초코볼 150g</h3>
+                                   <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                   <h3>비건(Vegan)<br>8,900원</h3>
+                                </div>
+                             </div>
+                            <div class="swiper-slide p3">
+                                <div class="p_top">
+                                   <h3>널담 파이 초코</h3>
+                                   <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                   <h3>비건(Vegan)<br>11,900원</h3>
+                                </div>
+                           </div>
+                            <div class="swiper-slide p4">
+                                <div class="p_top">
+                                   <h3>널담 고단백 고식이섬유, 널담쿠키</h3>
+                                   <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="p_bottom">
+                                   <h3>락토오보 베지테리언<br>11,900원</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center container">
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/s3_1.png" alt="유튜브널담이">
+                        </div>
+                        <div class="s4_img_box s4_ani1">
+                            <img src="img/s3_1-box.png" alt="유튜브박스">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <img src="img/s3-icon1.png" alt="유튜브 아이콘">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_right">
+                        <div class="s4_img s4_ani3">
+                            <img src="img/s3_2.png" alt="똑똑한널담이">
+                        </div>
+                        <div class="s4_img_box s4_ani3">
+                            <img src="img/s3_2-box.png" alt="똑똑한 박스">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <img src="img/s3-icon2.png" alt="상식 아이콘">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <div class="acc up_animation">
+                    <div class="acc_item acc1">
+                        <h1>널 담의 편지 카페</h1>
+                        <h4>1년365개의 엽서함, letter to Future</h4>
+                    </div>
+                    <div class="acc_item acc2">
+                        <h1>Nuldam</h1>
+                        <h4>널담이 더 많은 분들과 소통하기 위해<br>배러레터를 시작합니다!</h4>
+                    </div>
+                    <div class="acc_item acc3 active">
+                        <h1>널담 활용 레시피</h1>
+                        <h4>널담 로우를 활용해서<br>맛있는 디저트 만들기:D</h4>
+                    </div>
+                    <div class="acc_item acc4">
+                        <h1>널 담은 책 우리를 담은 책</h1>
+                        <h4> 널담 문구</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="list">
+                    <ul>
+                        <li class="up_animation"><a href="#"><img src="img/s5-icon.png" alt="sns아이콘"></a></li>
+                        <li class="up_animation"><a href="#"><img src="img/s5-1.jpg" alt="이미지"></a></li>
+                        <li class="up_animation"><a href="#"><img src="img/s5-2.jpg" alt="이미지"></a></li>
+                        <li class="up_animation"><a href="#"><img src="img/s5-3.jpg" alt="이미지"></a></li>
+                        <li class="up_animation up_delay"><a href="#"><img src="img/s5-4.jpg" alt="이미지"></a></li>
+                        <li class="up_animation up_delay"><a href="#"><img src="img/s5-5.jpg" alt="이미지"></a></li>
+                        <li class="up_animation up_delay"><a href="#"><img src="img/s5-6.jpg" alt="이미지"></a></li>
+                        <li class="up_animation up_delay"><a href="#"><img src="img/s5-7.jpg" alt="이미지"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div id="map_canvas"></div>
+            <div class="s7_sddr">
+                <div class="s7_sddr_in up_animation">
+                    <div class="s7_img"></div>
+                    <div class="s7_right">
+                        <div class="s7_logo"><img src="img/logo.png" alt="로고"></div>
+                       <div class="s7_txt">
+                        <h2>15633 경기도 안산시 상록구<br>선진로 49 (사동) 1층, 2층<br>조인앤조인</h2>
+                        <h4>전화 1533-7941</h4>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="f_logo"><img src="img/f_iogo.png" alt="푸터로고"></div>
+                <div class="f_right">
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#"><img src="img/footer_icon1.png" alt="인스타아이콘"></a></li>
+                            <li><a href="#"><img src="img/footer_icon2.png" alt="페이스북아이콘"></a></li>
+                            <li><a href="#"><img src="img/footer_icon3.png" alt="유튜브아이콘"></a></li>
+                            <li><a href="#"><img src="img/footer_icon4.png" alt="네이버아이콘"></a></li>
+                        </ul>
+                    </div>
+                    <div class="f_txt">
+                        <address>법인명(상호) 주식회사조인앤조인 대표자 진해수 사업자 등록번호 안내 [503-87-01038]<br>
+                            통신판매업 신고 제 2018-경기안산-0150 호 [사업자정보확인] 결제정보 보안확인<br>
+                            전화 1533-7941 팩스 주소 15633 경기도 안산시 상록구 선진로 49 (사동) 1층, 2층 조인앤조인</address>
+                            <p> Copyright © 2018 널 담. All rights reserved.Hosting by 카페24(주)Design by GOODYMALL</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- top 버튼 -->
+        <div class="top">TOP</div>
+    </div>
+    <!-- 사이트맵 -->
+    <div class="sitemap">
+        <div class="site_logo">
+            <img src="img/f_iogo.png" alt="사이트맵 로고">
+        </div>
+        <div class="site_close">
+            <a href="#"><img src="img/close_icon.png" alt="닫기"></a>
+        </div>
+        <nav class="site_nav">
+            <ul>
+                <li>
+                    <a href="#">브랜드소개</a>
+                    <ul class="sub">
+                        <li><a href="#">널담은 가치</a></li>
+                        <li><a href="#">널담은 공간</a></li>
+                        <li><a href="#">찾아오는 공간</a></li>
+                        <li><a href="#">널담레터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">구매하기</a>
+                    <ul class="sub">
+                        <li><a href="#">널담 디저트</a></li>
+                        <li><a href="#">널담 로우</a></li>
+                        <li><a href="#">널담 문구</a></li>
+                        <li><a href="#">더베러모닝</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">상품후기</a></li>
+                        <li><a href="#">회원혜택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">널담의 이야기</a>
+                    <ul class="sub">
+                        <li><a href="#">활용 레시피</a></li>
+                        <li><a href="#">다양한 스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="site_sns">
+            <ul>
+                <li><a href="#"><img src="img/footer_icon1.png" alt=""></a></li>
+                <li><a href="#"><img src="img/footer_icon2.png" alt=""></a></li>
+                <li><a href="#"><img src="img/footer_icon3.png" alt=""></a></li>
+                <li><a href="#"><img src="img/footer_icon4.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
